@@ -7,6 +7,7 @@ let cart = [];
 addToCartButtons.forEach(button => {
   button.addEventListener('click', () => {
     const productName = button.getAttribute('data-name');
+    console.log(productName);
     const productPrice = parseFloat(button.getAttribute('data-price'));
 
     addToCart(productName, productPrice);
